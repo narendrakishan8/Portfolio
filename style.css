@@ -1,0 +1,551 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap");
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body{
+  background: #0d0d0d;
+}
+
+/* ############################# Navbar Styling ############################## */
+
+.navbar{
+    display:flex;
+    justify-content: center;
+    position: fixed;
+    padding: 20px;  
+    width: 100%;
+    background-color:  rgb(207, 125, 17);
+    z-index: 1000;
+}
+
+.navbar a{
+    font-size: 2rem;
+    color: black;
+    cursor: pointer;
+    padding: 20px;
+    transition: ease-in-out .3s;
+}
+
+.navbar a:hover {
+    background: crimson;
+    padding: 1rem 2rem 1rem 2rem;
+    transition: ease-in-out .3s;
+  }
+
+  .navbar a:hover i {
+    color: #fff;
+    transition: ease-in-out .3s;
+  }
+
+/* ############################ Home Section ############################ */
+
+
+.home{
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
+    padding-top: 16rem;
+}
+
+.home .image{
+    padding: 2rem;
+}
+
+.home .image img{
+  height: 45rem;
+  width: 45rem;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    
+    
+}
+
+.home .content{
+    padding: 2rem;
+}
+
+.home .content h3 {
+  color: #fff;
+  font-size: 4rem;
+  padding-bottom: .5rem;
+}
+
+.home .content span {
+  font-size: 3rem;
+  color: crimson;
+  padding: .5rem 0;
+  display: block;
+}
+
+.home .content p {
+  font-size: 1.5rem;
+  color: #aaa;
+  padding: 1rem 0;
+  line-height: 2;
+}
+
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: 5rem;
+  background: crimson;
+  padding: .7rem;
+  padding-left: 2rem;
+  font-size: 1.7rem;
+  color: #fff;
+}
+
+.btn i {
+  height: 3.5rem;
+  width: 3.5rem;
+  line-height: 3.5rem;
+  font-size: 1.7rem;
+  text-align: center;
+  background: #fff;
+  color: crimson;
+  border-radius: 50%;
+  margin-left: .5rem;
+  transition: .2s linear;
+}
+
+.btn:hover i {
+  margin-left: 2rem;
+}
+
+/* ############################ About Section ############################ */
+
+
+
+.about{
+  padding-top: 15rem;
+}
+
+.about .heading{
+  text-align: center;
+  font-size: 3.5rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.about .heading span{
+  color: red;
+  text-transform: uppercase;
+}
+
+.about .info-container{
+  color: #fff;
+}
+
+
+.box-container{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 7rem;
+}
+
+.box-container h3{
+  font-size: 1.8rem;
+}
+
+.box-container .box h3{
+  padding: .7rem;
+  letter-spacing: .1rem;
+}
+
+.box-container .box span{
+  padding: .7rem;
+  color: red;
+}
+
+.about .btn{
+  margin-left: 58rem;
+  margin-top: 3rem;
+}
+
+/* ############################ Skills Section ############################ */
+
+.skills .heading{
+  padding-top: 7rem;
+
+}
+
+.skills .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  /* gap: 1rem; */
+
+  
+}
+
+.skills .box-container .box{
+  text-align: center;
+  padding: 2rem;
+  margin:0 2rem 2rem 2rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+  border-radius: .5rem;
+  background: #1a1a1a;
+  transition: .3s ease-in-out;
+}
+
+.skills .box-container .box img {
+  height: 7rem;
+  margin-bottom: 1rem;
+}
+
+.skills .box-container .box h3 {
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.skills .box-container .box:hover {
+  background: #fff;
+}
+
+.skills .box-container .box:hover h3 {
+  color: #0d0d0d;
+  
+}
+
+/* ############################ Education Section ############################ */
+
+.education .heading{
+  padding-top: 5rem;
+}
+
+.education .box-container{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 0%;
+  padding: 5rem;
+}
+
+.education .box-container .box{
+  color: #fff;
+  padding: 2rem;
+  margin: 0%;
+  width: 70%;
+  margin-left: 8rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+  border-radius: .5rem;
+  cursor: pointer;
+}
+
+.education .box-container .box p{
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.education .box-container .box i{
+  color: #fff;
+}
+
+.education .box-container .box:hover{
+  background: #fff;
+  transition: .3s ease-in-out;
+}
+
+.education .box-container .box:hover h3{
+  color: black;
+  transition: .3s ease-in-out;
+}
+
+.education .box-container .box:hover p{
+  color: black;
+  transition: .3s ease-in-out;
+}
+
+.education .box-container .box:hover i{
+  color: black;
+  transition: .3s ease-in-out;
+}
+
+.education .box-container .box span{
+  font-size: 2rem;
+}
+
+/* ############################ Portfolio Section ############################ */
+
+.portfolio {
+  text-align: center;
+}
+
+.portfolio .heading{
+  padding-top: 13rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 4rem;
+}
+
+.portfolio .heading span{
+  color: red;
+  text-transform: uppercase;
+  font-size: 4rem;
+}
+
+
+.portfolio .box-container {
+  display: flex;
+  max-width: 1200;
+  gap: 1rem;
+  margin: 0%;
+  padding: 5rem;
+}
+
+.portfolio .box-container .box {
+  height: 30rem;
+  overflow: hidden;
+  position: relative;
+  max-width: 25%;
+  padding: 2rem;
+}
+
+.portfolio .box-container .box img{
+  width: 250px;
+  height: 200px;
+}
+
+.portfolio .box-container .box .content{
+  color: #fff;
+}
+
+.portfolio .box-container .box .content h3{
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  padding: 1rem;
+}
+
+.portfolio .box-container .box .content a{
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.portfolio .box-container .box .content a:hover{
+  color: red;
+  transition: .3s ease-in-out;
+}
+
+.portfolio .box-container .box .content span{
+  color: red;
+}
+
+.portfolio .btn{
+  margin: 0%;
+}
+
+/* ############################ Contact Styling ############################ */
+
+
+.contact{
+  text-align: center;
+  padding-top: 15rem;
+}
+
+.contact .heading{
+  color: #fff;
+  text-transform: uppercase; 
+  font-size: 3.2rem;
+
+}
+
+.contact .heading span{
+  color: red;
+  text-transform: uppercase;
+  font-size: 3.2rem;
+}
+
+.contact .row{
+    display: flex;
+    margin-top: 3rem;
+}
+
+.contact .row .info-container{
+    width: 50%;
+}
+
+.contact .row .box-container{
+  width: 100%;
+  display: flex;
+}
+
+
+.contact .row .info-container h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #fff;
+  padding-bottom: 1rem;
+}
+
+.contact .row .info-container span{
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: red;
+  padding-bottom: 1rem;
+}
+
+.contact .row .info-container p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #aaa;
+  padding: 1rem 0;
+}
+
+
+.contact .row .info-container .box-container .box i {
+  font-size: 3rem;
+  color: crimson;
+}
+
+.contact .row .info-container .box-container .box h3 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+
+.contact .row .info-container .share a {
+  font-size: 2rem;
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  border-radius: 50%;
+  background: #1a1a1a;
+  color: #fff;
+  text-align: center;
+  margin-right: .3rem;
+  margin-top: 5rem;
+}
+
+.contact .row .info-container .share a:hover {
+  background: crimson;
+}
+
+.contact .row form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 42rem;
+          flex: 1 1 42rem;
+}
+
+.contact .row form .inputBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-right: 5rem;
+  
+}
+
+.contact .row form .inputBox input {
+  width: 49%;
+}
+
+.contact .row form .inputBox input,
+.contact .row form textarea {
+  border-radius: 5rem;
+  padding: 1.2rem 1.8rem;
+  font-size: 1.6rem;
+  color: #fff;
+  text-transform: none;
+  margin: .7rem 0;
+  background: #1a1a1a;
+}
+
+.contact .row form textarea {
+  width: 90%;
+  border-radius: 1rem;
+  resize: none;
+  height: 20rem;
+  margin-right: 5rem;
+}
+
+.contact .row form .btn {
+  padding: 1rem 3rem;
+  cursor: pointer;
+}
+
+.contact .row form .btn:hover {
+  background: #fff;
+  color: #0d0d0d;
+}
+
+/* ############################ Blog Styling ############################ */
+
+.error{
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 25rem;
+  color: #fff;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+  section {
+    padding: 3rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 12vw;
+  }
+  .navbar a i {
+    padding: 0;
+  }
+  .navbar a span {
+    display: none;
+  }
+  .navbar a:hover {
+    padding-bottom: 2rem;
+  }
+  .home {
+    text-align: center;
+    gap: 2rem;
+  }
+  .home .image img {
+    height: 30rem;
+    width: 30rem;
+  }
+  .home .content h3 {
+    font-size: 3rem;
+  }
+  .home .content span {
+    font-size: 2.5rem;
+  }
+  .contact .row form .inputBox input {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+
+
